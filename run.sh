@@ -7,7 +7,7 @@ if [ -z "$dir" ]; then
     echo "Usage: ./run.sh <path-to-problem> [--manual]"
     exit 1
 fi
-gcc "$dir/main.c" -o "$dir/main" || exit 1
+gcc "$dir/main.c" -o "$dir/main" -lm || exit 1
 if [ "$2" = "--manual" ] || [ ! -f "$dir/input.txt" ]; then
     "$dir/main"
 else

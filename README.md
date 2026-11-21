@@ -10,6 +10,8 @@ c-exercises/
 │   └── Two-Dimensional/
 │       ├── min_path_sum/
 │       └── queen_attack/
+├── Number-Theory/
+│   └── sum_sum_sum/
 ├── .gitignore
 ├── README.md
 └── run.sh
@@ -27,6 +29,9 @@ chmod +x run.sh                     # only needed once
 ./run.sh <path-to-problem> --manual # reads from the keyboard
 ```
 
+On Windows, run the same commands inside a WSL terminal, or prefix each one with `wsl` when using PowerShell/CMD.
+
+
 ## Problems
 
 ### Arrays
@@ -35,5 +40,11 @@ chmod +x run.sh                     # only needed once
 
 | # | Problem | Time | Space | Code |
 |---|---------|------|-------|------|
-| 1 | Queens attack | O(N²) | O(N²) | [main.c](Arrays/Two-Dimensional/queen_attack/main.c) |
-| 2 | Min path sum | O(m·n) | O(m·n) | [main.c](Arrays/Two-Dimensional/min_path_sum/main.c) |
+| 1 | Min path sum | O(m·n) | O(m·n) | [main.c](Arrays/Two-Dimensional/min_path_sum/main.c) |
+| 2 | Queens attack | O(N²) | O(N²) | [main.c](Arrays/Two-Dimensional/queen_attack/main.c) |
+
+### Number Theory
+
+| # | Problem | Time | Space | Code |
+|---|---------|------|-------|------|
+| 1 | Sum sum sum | O(√n) | O(1) | [main.c](Number-Theory/sum_sum_sum/main.c) |
